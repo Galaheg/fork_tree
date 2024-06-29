@@ -44,10 +44,9 @@ int parent(int pid1, int pid2){
 void create_tree(int height){
 	if(height==0){
 		return;
-	}
-	else if (height == 1){
 		leaf();
 	}
+
 	int pid = fork();
 	if(pid>0){
 		//parent process
